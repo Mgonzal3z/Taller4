@@ -1,0 +1,15 @@
+INSERT INTO UserApp (username, password, email, role) VALUES ('Mario','owner@gmail.com','123456','owner');
+INSERT INTO UserApp (username, password, email, role) VALUES ('Carlos','vet@gmail.com','123456','vet');
+INSERT INTO UserApp (username, password, email, role) VALUES ('Mark','official@gmail.com','123456','official');
+
+INSERT INTO Owner (username, person_id, name, address, neighborhood) VALUES ('Pepita','3456','Conocidos','calle 80','cedritos');
+
+INSERT INTO Vet (username, name, address, neighborhood) VALUES ('Pedra','Amigos','calle 80','cedritos');
+
+INSERT INTO Official (username, name) VALUES ('Mark', 'Camilo Perez');
+
+INSERT INTO Pet (pet_id, microchip, name, species, race, size, sex, picture, owner_id) VALUES (4, '9876', 'Max', 'dog','golden','tall','female','dog.png','Pepito');
+
+INSERT INTO Visit (visit_id, created_at, type, description, vet_id, pet_id) VALUES (9, 'visited','temporal','visita','Carlos',3);
+
+INSERT INTO PetCase (case_id, created_at, type, description, pet_id) VALUES (4, 'casoUno', 'caso','casoMascota',3);

@@ -2,37 +2,57 @@ package co.edu.unbosque.jdbc.dtos;
 
 public class Owner {
 
-    private Integer idNumer;
-    private String email;
-    private String fullName;
+    private String username;
+    private String personId;
+    private String name;
+    private String address;
+    private String neighborhood;
 
-    public Owner(Integer idNumer, String email, String fullName) {
-        this.idNumer = idNumer;
-        this.email = email;
-        this.fullName = fullName;
+    public Owner(String username, String personId, String name, String address, String neighborhood ) {
+        this.address = address;
+        this.name = name;
+        this.username = username;
+        this.personId = personId;
+        this.neighborhood = neighborhood;
     }
 
-    public Integer getIdNumer() {
-        return idNumer;
+    public String getUsername() {
+        return username;
     }
 
-    public void setIdNumer(Integer idNumer) {
-        this.idNumer = idNumer;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getEmail() {
-        return email;
+    public String getPersonId() {
+        return personId;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPersonId(String personId) {
+        this.personId = personId;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getName() {
+        return name;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getNeighborhood() {
+        return neighborhood;
+    }
+
+    public void setNeighborhood(String neighborhood) {
+        this.neighborhood = neighborhood;
     }
 }

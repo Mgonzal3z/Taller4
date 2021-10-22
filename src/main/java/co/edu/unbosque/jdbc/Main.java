@@ -17,7 +17,7 @@ public class Main {
 
     // Database credentials
     static final String USER = "postgres";
-    static final String PASS = "";
+    static final String PASS = "RadioAlt.Hungry,@gil";
 
     public static void main(String[] args) {
 
@@ -40,7 +40,7 @@ public class Main {
             petsService.countBySpecies("dog");
 
             OwnersService ownersService = new OwnersService(conn);
-            ownersService.updateOwner(new Owner(6698, null, "Pepito Perez"));
+            ownersService.updateOwner(new Owner("Pepita","3456","Conocidos","calle 80","cedritos"));
 
             // Closing database connection
             conn.close();

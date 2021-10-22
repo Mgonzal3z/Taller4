@@ -37,12 +37,13 @@ public class UserService {
             // Reading data from result set row by row
             while(rs.next()) {
                 // Extracting row values by column name
+                String username = rs.getString("username");
                 String email  = rs.getString("email");
                 String password = rs.getString("password");
                 String role = rs.getString("role");
 
                 // Creating a new UserApp class instance and adding it to the array list
-                userApps.add(new UserApp(email, password, role));
+                userApps.add(new UserApp(username, email, password, role));
             }
 
             // Printing results
